@@ -4,8 +4,9 @@ import { useState } from "react"
 const AddTodo = () => {
     const [todo, setTodo] = useState("")
   return (
-    <form>
+    <form >
 <input type="text" name="" value={todo} onChange={(e)=>setTodo(e.target.value)} />
+<button type="submit">Add</button>
     </form>
   )
 }
